@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    background-color: #1e1e2f;
+    color:#f0e6e6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  color: #dabfff; 
+  font-family: 'Major Mono Display', monospace;
+}
+
+h1:hover{
+    color:rgba(255, 254, 254, 0.1)
+}
+
+#quoteDisplay {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  background-color: #2b2b40;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 200, 255, 0.1);
+}
+
+#inputBox {
+  width: 80%;
+  max-width: 500px;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 2px solid #ae81ff;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  background-color: #2e2e3e;
+  color: #fdfcfc;
+}
+
+#inputBox:focus {
+  outline: none;
+  border-color: #dabfff;
+  box-shadow: 0 0 10px #dabfff;
+}
+
+#stats {
+  margin-bottom: 1.5rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  background-color: #2b2b40;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(255, 200, 255, 0.1);
+  flex-wrap: wrap; 
+}
+
+#stats p {
+  margin: 0.3rem 0;
+  color: #ddd;
+  font-weight: 500;
+}
+
+#restartBtn {
+  background-color: #ae81ff;
+  color: #1e1e2f;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#restartBtn:hover {
+  background-color: #caaeff;
+}
+
+.hidden {
+  display: none;
+}
+
+#resultScreen {
+  margin-top: 2rem;
+  text-align: center;
+  color: #fff;
+  background-color: #2c2c44;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #dabfff;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+ 
+#playAgainBtn {
+  margin-top: 1.5rem;
+  padding: 0.8rem 2rem;
+  background-color: #dabfff;
+  color: #1e1e2f;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+#playAgainBtn:hover {
+  background-color: #c4a9f1;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #dabfff;
+}
+
+
